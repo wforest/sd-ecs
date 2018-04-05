@@ -1,10 +1,10 @@
-=== The Events Calendar Shortcode ===
-Contributors: wforest
-Tags: event, events, calendar, shortcode, modern tribe
-Requires at least: 4.1
-Tested up to: 4.9
-Stable tag: 1.0
-License: GPLv2 or later
+=== The Events Calendar Shortcode ===   
+Contributors: wforest   
+Tags: event, events, calendar, shortcode, modern tribe   
+Requires at least: 4.1   
+Tested up to: 4.9   
+Stable tag: 1.0   
+License: GPLv2 or later   
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 Adds shortcode functionality to The Events Calendar Plugin (Free Version) by Modern Tribe, so you can list your events anywhere.
