@@ -13,6 +13,8 @@ Adds shortcode functionality to The Events Calendar Plugin (Free Version) by Mod
 
 This plugin is derived from The Events Calendar Shortcode by brianhogg, https://eventcalendarnewsletter.com/the-events-calendar-shortcode/. It adds a shortcode for use with The Events Calendar Plugin (by Modern Tribe).
 
+This plugin was modified to work with the Boo Theme for Circle Pines Center. 
+
 With this plugin, just add the shortcode on a page to display a list of your events. For example to show next 8 events in the category festival:
 
 `[sdecs-list-events cat="festival" limit="8"]`
@@ -42,7 +44,7 @@ This plugin is not developed by or affiliated with The Events Calendar or Modern
 
 == Installation ==
 
-1. Install Sulli Digital Events Calendar Shortcode Plugin from the WordPress.org repository or by uploading sulli-digital-ecs folder to the /wp-content/plugins directory. You must also install The Event Calendar Plugin by Modern Tribe and add your events to the calendar.
+1. Install Sulli Digital Events Calendar Shortcode Plugin by uploading sulli-digital-ecs folder to the /wp-content/plugins directory. You must also install The Event Calendar Plugin by Modern Tribe and add your events to the calendar.
 
 2. Activate the plugin through the Plugins menu in WordPress
 
