@@ -48,7 +48,7 @@ This plugin is not developed by or affiliated with The Events Calendar or Modern
 
 3. If you don't already have The Events Calendar (the calendar you add your events to) you will be prompted to install it
 
-You can then add the `[sdecs-list-events]` shortcode to the page or post you want to list events on.  [Full list of options available in the documentation](https://eventcalendarnewsletter.com/events-calendar-shortcode-pro-options/?utm_source=wordpress.org&utm_medium=link&utm_campaign=tecs-readme-install-docs&utm_content=description).
+You can then add the `[sdecs-list-events]` shortcode to the page or post you want to list events on.
 
 
 == Frequently Asked Questions ==
@@ -56,23 +56,23 @@ You can then add the `[sdecs-list-events]` shortcode to the page or post you wan
 = What are the shortcode options? =
 
 * Basic shortcode: `[sdecs-list-events]`
-* cat - Show events from an event category `[ecs-list-events cat='festival']` or specify multiple categories `[ecs-list-events cat='festival, workshops']`
-* limit - Total number of events to show. Default is 5. `[ecs-list-events limit='3']`
-* order - Order of the events to be shown. Value can be 'ASC' or 'DESC'. Default is 'ASC'. Order is based on event date. `[ecs-list-events order='DESC']`
-* date - To show or hide date. Value can be 'true' or 'false'. Default is true. `[ecs-list-events eventdetails='false']`
-* venue - To show or hide the venue. Value can be 'true' or 'false'. Default is false. `[ecs-list-events venue='true']`
-* excerpt - To show or hide the excerpt and set excerpt length. Default is false. `[ecs-list-events excerpt='true']` //displays excerpt with length 100
+* cat - Show events from an event category `[sdecs-list-events cat='festival']` or specify multiple categories `[sdecs-list-events cat='festival, workshops']`
+* limit - Total number of events to show. Default is 5. `[sdecs-list-events limit='3']`
+* order - Order of the events to be shown. Value can be 'ASC' or 'DESC'. Default is 'ASC'. Order is based on event date. `[sdecs-list-events order='DESC']`
+* date - To show or hide date. Value can be 'true' or 'false'. Default is true. `[sdecs-list-events eventdetails='false']`
+* venue - To show or hide the venue. Value can be 'true' or 'false'. Default is false. `[sdecs-list-events venue='true']`
+* excerpt - To show or hide the excerpt and set excerpt length. Default is false. `[sdecs-list-events excerpt='true']` //displays excerpt with length 100
  excerpt='300' //displays excerpt with length 300
-* thumb - To show or hide thumbnail image. Default is false. `[ecs-list-events thumb='true']` //displays post thumbnail in default thumbnail dimension from media settings.
-* thumbsize - Specify the size of the thumbnail. `[ecs-list-events thumb='true' thumbsize='large']`
-* thumbwidth / thumbheight - Customize the thumbnail size in pixels `[ecs-list-events thumb='true' thumbwidth='150' thumbheight='150']`
+* thumb - To show or hide thumbnail image. Default is false. `[sdecs-list-events thumb='true']` //displays post thumbnail in default thumbnail dimension from media settings.
+* thumbsize - Specify the size of the thumbnail. `[sdecs-list-events thumb='true' thumbsize='large']`
+* thumbwidth / thumbheight - Customize the thumbnail size in pixels `[sdecs-list-events thumb='true' thumbwidth='150' thumbheight='150']`
 * message - Message to show when there are no events. Defaults to 'There are no upcoming events at this time.'
-* viewall - Determines whether to show 'View all events' or not. Values can be 'true' or 'false'. Default to 'true' `[ecs-list-events cat='festival' limit='3' order='DESC' viewall='false']`
-* contentorder - Manage the order of content with commas. Default to `title, thumbnail, excerpt, date, venue`. `[ecs-list-events cat='festival' limit='3' order='DESC' viewall='false' contentorder='title, thumbnail, excerpt, date, venue']`
-* month - Show only specific month (in YYYY-MM format). Type `'current'` for displaying current month only or `'next'` for next month. `[ecs-list-events cat='festival' month='2015-06']`
-* past - Show Outdated Events. `[ecs-list-events cat='festival' past='yes']`
-* key - Hide events when the start date has passed `[ecs-list-events cat='festival' key='start date']`
-* orderby - Change the ordering to the end date `[ecs-list-events orderby="enddate"]`
+* viewall - Determines whether to show 'View all events' or not. Values can be 'true' or 'false'. Default to 'true' `[sdecs-list-events cat='festival' limit='3' order='DESC' viewall='false']`
+* contentorder - Manage the order of content with commas. Default to `title, thumbnail, excerpt, date, venue`. `[sdecs-list-events cat='festival' limit='3' order='DESC' viewall='false' contentorder='title, thumbnail, excerpt, date, venue']`
+* month - Show only specific month (in YYYY-MM format). Type `'current'` for displaying current month only or `'next'` for next month. `[sdecs-list-events cat='festival' month='2015-06']`
+* past - Show Outdated Events. `[sdecs-list-events cat='festival' past='yes']`
+* key - Hide events when the start date has passed `[sdecs-list-events cat='festival' key='start date']`
+* orderby - Change the ordering to the end date `[sdecs-list-events orderby="enddate"]`
 
 = How do I use this shortcode in a widget? =
 
