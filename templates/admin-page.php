@@ -12,7 +12,7 @@
 
 				<div>
 					<h2><?php echo esc_html( __( 'Basic shortcode', 'sd-events-calendar-shortcode' ) ); ?></h2>
-						<blockquote>[ecs-list-events]</blockquote>
+						<blockquote>[sdecs-list-events]</blockquote>
 
 					<h2><?php echo esc_html( __( 'Shortcode Options', 'sd-events-calendar-shortcode' ) ); ?></h2>
 					<?php do_action( 'sdecs_admin_page_options_before' ); ?>
