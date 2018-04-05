@@ -118,8 +118,8 @@ class SD_Events_Calendar_Shortcode
 	public function add_action_links( $links ) {
 		$mylinks = array();
 		if ( class_exists( 'Tribe__Settings' ) and method_exists( Tribe__Settings::instance(), 'should_setup_pages' ) and Tribe__Settings::instance()->should_setup_pages() )
-			$mylinks[] = '<a href="' . admin_url( 'edit.php?post_type=tribe_events&page=ecs-admin' ) . '">' . esc_html__( 'Settings', 'sd-events-calendar-shortcode' ) . '</a>';
-		$mylinks[] = '<a target="_blank" style="color:#3db634; font-weight: bold;" href="https://sullidigital.com">' . esc_html__( 'Upgrade', 'ed-events-calendar-shortcode' ) . '</a>';
+			$mylinks[] = '<a href="' . admin_url( 'edit.php?post_type=tribe_events&page=sdecs-admin' ) . '">' . esc_html__( 'Settings', 'sd-events-calendar-shortcode' ) . '</a>';
+
 
 		return array_merge( $links, $mylinks );
 	}

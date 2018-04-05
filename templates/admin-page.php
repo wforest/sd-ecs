@@ -77,27 +77,6 @@
 				</div>
 
 			</td>
-			<td valign="top" class="styling">
-				<h3>Styling/Design</h3>
-
-				<?php do_action( 'sdecs_admin_page_styling_before' ); ?>
-
-				<?php if ( apply_filters( 'sdecs_show_upgrades', true ) ): ?>
-
-					<p><?php echo esc_html( __( 'By default the plugin does not include styling. Events are listed in ul li tags with appropriate classes for styling and you can add your own CSS:', 'sd-events-calendar-shortcode' ) ) ?></p>
-
-					<ul>
-						<li>ul class="sdecs-event-list"</li>
-						<li>li class="sdecs-event" &amp; "sdecs-featured-event" <?php echo esc_html( __( '(if featured)', 'sd-events-calendar-shortcode' ) ) ?></li>
-						<li><?php echo esc_html( sprintf( __( 'event title link is %s', 'sd-events-calendar-shortcode' ), 'H4 class="entry-title summary"' ) ); ?> </li>
-						<li><?php echo esc_html( sprintf( __( 'date class is %s', 'sd-events-calendar-shortcode' ), 'time' ) ); ?></li>
-						<li><?php echo esc_html( sprintf( __( 'venue class is %s', 'sd-events-calendar-shortcode' ), 'venue' ) ); ?></li>
-						<li>span .sdecs-all-events</li>
-						<li>p .sdecs-excerpt</li>
-					</ul>
-
-				<?php endif; ?>
-			</td>
 		</tr>
 		</tbody>
 	</table>
