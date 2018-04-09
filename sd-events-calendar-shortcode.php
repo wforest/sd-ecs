@@ -271,7 +271,7 @@ class SD_Events_Calendar_Shortcode
 
 		if ( $posts or apply_filters( 'sdecs_always_show', false, $atts ) ) {
 			$output = apply_filters( 'sdecs_beginning_output', $output, $posts, $atts );
-			$output .= apply_filters( 'sdecs_start_tag', '<ul class="ecs-event-list">', $atts );
+			$output .= apply_filters( 'sdecs_start_tag', '<div class="sdecs-event-list wpb_row vc_row">', $atts );
 			$atts['contentorder'] = explode( ',', $atts['contentorder'] );
 
 			foreach( (array) $posts as $post_index => $post ) {
@@ -287,15 +287,15 @@ class SD_Events_Calendar_Shortcode
 						$category_slugs[] = ' ' . $category->slug . '_sdecs_category';
 					}
 				}
-				$event_output .= apply_filters( 'sdecs_event_start_tag', '<li class="sdecs-event' . implode( '', $category_slugs ) . $featured_class . apply_filters( 'sdecs_event_classes', '', $atts, $post ) . '">', $atts, $post );
+				$event_output .= apply_filters( 'sdecs_event_start_tag', '<div class="sdecs-event wpb_column vc_column_container vc_col-sm-4' . implode( '', $category_slugs ) . $featured_class . apply_filters( 'sdecs_event_classes', '', $atts, $post ) . '"> <div class="vc_column-inner"><div class="wpb_wrapper"><div class="content-box content-box-default content-box-classic">', $atts, $post );
 
 				// Put Values into $event_output
 				foreach ( apply_filters( 'sdecs_event_contentorder', $atts['contentorder'], $atts, $post ) as $contentorder ) {
 					switch ( trim( $contentorder ) ) {
 						case 'title':
-							$event_output .= apply_filters( 'sdecs_event_title_tag_start', '<h4 class="entry-title summary">', $atts, $post ) .
+							$event_output .= apply_filters( 'sdecs_event_title_tag_start', '<h3 class="entry-title summary">', $atts, $post ) .
 											apply_filters( 'sdecs_event_list_title_link_start', '<a href="' . tribe_get_event_link() . '" rel="bookmark">', $atts, $post ) . apply_filters( 'sdecs_event_list_title', get_the_title(), $atts, $post ) . apply_filters( 'sdecs_event_list_title_link_end', '</a>', $atts, $post ) .
-							           apply_filters( 'sdecs_event_title_tag_end', '</h4>', $atts, $post );
+							           apply_filters( 'sdecs_event_title_tag_end', '</h3>', $atts, $post );
 							break;
 
 						case 'thumbnail':
@@ -319,15 +319,15 @@ class SD_Events_Calendar_Shortcode
 								$excerptLength = is_numeric($atts['excerpt']) ? $atts['excerpt'] : 100;
 								$event_output .= apply_filters( 'sdecs_event_excerpt_tag_start', '<p class="sdecs-excerpt">', $atts, $post ) .
 								           apply_filters( 'sdecs_event_excerpt', self::get_excerpt( $excerptLength ), $atts, $post, $excerptLength ) .
-								           apply_filters( 'sdecs_event_excerpt_tag_end', '</p>', $atts, $post );
+								           apply_filters( 'sdecs_event_excerpt_tag_end', '</p><a href="' . tribe_get_event_link() . '" class="btn btn-default semi-round border-thin btn-sdecs" rel="bookmark"><span>See Details</span></a>', $atts, $post );
 							}
 							break;
 
 						case 'date':
 							if ( self::isValid( $atts['eventdetails'] ) ) {
-								$event_output .= apply_filters( 'sdecs_event_date_tag_start', '<span class="duration time">', $atts, $post ) .
+								$event_output .= apply_filters( 'sdecs_event_date_tag_start', '<h4 class="duration time">', $atts, $post ) .
 								           apply_filters( 'sdecs_event_list_details', tribe_events_event_schedule_details(), $atts, $post ) .
-								           apply_filters( 'sdecs_event_date_tag_end', '</span>', $atts, $post );
+								           apply_filters( 'sdecs_event_date_tag_end', '</h4>', $atts, $post );
 							}
 							break;
 
@@ -350,10 +350,10 @@ class SD_Events_Calendar_Shortcode
 							$event_output .= apply_filters( 'sdecs_event_list_output_custom_' . strtolower( trim( $contentorder ) ), '', $atts, $post );
 					}
 				}
-				$event_output .= apply_filters( 'sdecs_event_end_tag', '</li>', $atts, $post );
+				$event_output .= apply_filters( 'sdecs_event_end_tag', '</div></div></div></div>', $atts, $post );
 				$output .= apply_filters( 'sdecs_single_event_output', $event_output, $atts, $post, $post_index, $posts );
 			}
-			$output .= apply_filters( 'sdecs_end_tag', '</ul>', $atts );
+			$output .= apply_filters( 'sdecs_end_tag', '</div>', $atts );
 			$output = apply_filters( 'sdecs_ending_output', $output, $posts, $atts );
 
 			if( self::isValid( $atts['viewall'] ) ) {
