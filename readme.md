@@ -11,7 +11,7 @@ Adds shortcode functionality to The Events Calendar Plugin (Free Version) by Mod
 
 == Description ==
 
-This plugin is derived from The Events Calendar Shortcode by brianhogg, https://eventcalendarnewsletter.com/the-events-calendar-shortcode/. It adds a shortcode for use with The Events Calendar Plugin (by Modern Tribe).
+This plugin is editted to work with the monument valley theme and is derived from The Events Calendar Shortcode by brianhogg, https://eventcalendarnewsletter.com/the-events-calendar-shortcode/. It adds a shortcode for use with The Events Calendar Plugin (by Modern Tribe).
 
 This plugin was modified to work with the Boo Theme for Circle Pines Center. 
 
